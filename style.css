@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anek Gujarati', sans-serif;
+    /*padding: 0 10px;*/
+    width: 60vw;
+    margin: 0 auto;
+
+}
+
+.cycle > h4 {
+    color: sienna;
+}
+
+.product-image {
+    width: 250px;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.obj-el {
+    color: orangered;
+    text-align: justify;
+}

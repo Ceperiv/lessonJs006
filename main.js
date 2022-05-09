@@ -82,11 +82,7 @@
 
 //
 // описати колоду карт
-// - знайти піковий туз
-// - всі шістки
-// - всі червоні карти
-// - всі буби
-// - всі трефи від 9 та більше
+
 
 let value = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king', 'joker'];
 let cardSuit = ['spade', 'diamond', 'heart', 'clubs'];
@@ -97,13 +93,16 @@ let deskOfCardsArray = [];
 
 
 function deskOfCards() {
-    let newArr = [];
-    // debugger
+        // debugger
     for (let i = 0; i < value.length; i++) {
         for (let j = 0; j < cardSuit.length; j++) {
-            let card = {value: value[i], suit: cardSuit[j]}
-            newArr.push(card)
-            if (newArr[j].suit === 'diamond' || newArr[j].suit === 'heart') {
+            if (value[i] === 'joker' && cardSuit[j] === 'spade') {
+                deskOfCardsArray.push({value: 'joker', color: color[0]})
+            } else if (value[i] === 'joker' && cardSuit[j] === 'heart') {
+                deskOfCardsArray.push({value: 'joker', color: color[1]})
+            } else if (value[i] === 'joker' && cardSuit[j] === 'diamond' || value[i] === 'joker' && cardSuit[j] === 'clubs') {
+
+            } else if (value[i] === 'diamond' || cardSuit[j] === 'heart') {
                 deskOfCardsArray.push({value: value[i], suit: cardSuit[j], color: color[0]})
             } else {
                 deskOfCardsArray.push({value: value[i], suit: cardSuit[j], color: color[1]})
@@ -111,25 +110,26 @@ function deskOfCards() {
         }
     }
 
+
     return deskOfCardsArray
 }
 
 console.log(deskOfCards());
 
-// - знайти піковий туз
-console.log(deskOfCardsArray.find(value => value.value === 'ace' && value.suit === 'clubs'));
-
-// - всі шістки
-console.log(deskOfCardsArray.filter(value => value.value === '6'));
-
-// - всі червоні карти
-console.log(deskOfCardsArray.filter(value => value.color === 'red'));
-
-// - всі буби
-console.log(deskOfCardsArray.filter(value => value.suit === 'diamond'));
-
-// - всі трефи від 9 та більше
-console.log(deskOfCardsArray.filter(value => value.value >= '9' && value.suit === 'clubs' || value.value === '10' && value.suit === 'clubs'));
+// // - знайти піковий туз
+// console.log(deskOfCardsArray.find(value => value.value === 'ace' && value.suit === 'clubs'));
+//
+// // - всі шістки
+// console.log(deskOfCardsArray.filter(value => value.value === '6'));
+//
+// // - всі червоні карти
+// console.log(deskOfCardsArray.filter(value => value.color === 'red'));
+//
+// // - всі буби
+// console.log(deskOfCardsArray.filter(value => value.suit === 'diamond'));
+//
+// // - всі трефи від 9 та більше
+// console.log(deskOfCardsArray.filter(value => value.value >= '9' && value.suit === 'clubs' || value.value === '10' && value.suit === 'clubs'));
 
 
 

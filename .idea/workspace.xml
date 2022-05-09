@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de0b0b1b-bc3b-4238-885b-526aa789894f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="de0b0b1b-bc3b-4238-885b-526aa789894f" name="Changes" comment="done js lesson6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,8 +47,16 @@
       <workItem from="1651916362344" duration="31000" />
       <workItem from="1651916405176" duration="1379000" />
       <workItem from="1652057755599" duration="10004000" />
-      <workItem from="1652086943601" duration="13552000" />
+      <workItem from="1652086943601" duration="13921000" />
     </task>
+    <task id="LOCAL-00001" summary="done js lesson6">
+      <created>1652101374883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652101374883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,5 +72,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done js lesson6" />
+    <option name="LAST_COMMIT_MESSAGE" value="done js lesson6" />
   </component>
 </project>

@@ -110,7 +110,6 @@ function deskOfCards() {
         }
     }
 
-
     return deskOfCardsArray
 }
 
